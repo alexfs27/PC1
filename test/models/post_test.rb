@@ -1,17 +1,18 @@
 # == Schema Information
 #
-# Table name: blogs
+# Table name: posts
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
-#  about      :string(255)
+#  title      :string(255)
+#  content    :string(255)
+#  blog_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class BlogTest < ActiveSupport::TestCase
+class PostTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
